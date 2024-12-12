@@ -1,0 +1,60 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+/* Agregamos scroll-padding-top al html para que el ancla #top se posicione correctamente */
+html {
+  scroll-padding-top: 5rem; /* Ajusta este valor según la altura de la navbar */
+}
+
+/* Resto de estilos como antes */
+.bg-hero {
+  background: linear-gradient(135deg, #000000, #2c2c2c);
+  color: #fff;
+  position: relative;
+}
+
+.bg-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(0,0,0,0.2));
+  pointer-events: none;
+}
+
+.section-title {
+  border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 5px;
+}
+
+.card {
+  background-color: #ffffffee;
+  border: none;
+  border-radius: 10px;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hero-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.text-decoration-none:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes para las secciones */
+#about,
+#experience,
+#skills,
+#education,
+#contact {
+  scroll-margin-top: 80px; /* Ajusta si es necesario */
+}
